@@ -3,7 +3,7 @@
 Пример использования.
 
 ```yaml
-service:
+script:
   show_weather:
     alias: Покажи погоду
     sequence:
