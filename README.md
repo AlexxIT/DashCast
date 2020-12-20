@@ -1,6 +1,10 @@
 # DashCast for Home Assistant
 
-Пример использования.
+Эта служба Home Assistant позволяет транслировать веб-сайт на Google Chromecast.
+This Home Assistant service allows you to cast a website to a Google Chromecast.
+
+Пример использования:
+Usage example:
 
 ```yaml
 script:
