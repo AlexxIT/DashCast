@@ -1,6 +1,18 @@
 # DashCast for Home Assistant
 
-Пример использования.
+This Home Assistant service allows you to cast a website to a Google Chromecast.
+
+
+Installation with HACS can be done by adding the repository using the "Add Custom Repository"
+feature. You must also add a top-level line to your `configuration.yaml` enabling this service.
+
+```yaml
+dash_cast:
+```
+
+
+Пример использования:
+Usage example:
 
 ```yaml
 script:

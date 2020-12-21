@@ -1,0 +1,10 @@
+{
+  "domain": "dash_cast",
+  "name": "DashCast",
+  "documentation": "https://github.com/AlexxIT/DashCast",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [
+    "@AlexxIT"
+  ]
+}
