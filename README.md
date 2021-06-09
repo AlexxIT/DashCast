@@ -4,7 +4,7 @@
 
 This [Home Assistant](https://www.home-assistant.io/) service allows you to cast a website to a Google [Chromecast](https://en.wikipedia.org/wiki/Chromecast).
 
-# Installation
+## Installation
 
 **Method 1.** [HACS](https://hacs.xyz/) custom repo:
 
@@ -12,7 +12,7 @@ This [Home Assistant](https://www.home-assistant.io/) service allows you to cast
 
 **Method 2.** Manually copy `dash_cast` folder from [latest release](https://github.com/AlexxIT/DashCast/releases/latest) to `/config/custom_components` folder.
 
-# Configuration
+## Configuration
 
 **Method 1.** GUI:
 
@@ -26,7 +26,7 @@ If the integration is not in the list, you need to clear the browser cache.
 dash_cast:
 ```
 
-# Usage
+## Usage
 
 New service `dash_cast.load_url`:
 
