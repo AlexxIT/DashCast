@@ -1,2 +1,25 @@
-dash_cast:
-    description: 'Send websites to Chromecasts'
+load_url:
+  name: DashCast
+  description: 'Send websites to Chromecasts'
+  fields:
+    entity_id:
+      description: Media player entity
+      example: media_player.mibox4
+      required: true
+      selector:
+        entity:
+          integration: cast
+          domain: media_player
+
+    url:
+      description: Webpage URL
+      example: http://yandex.ru/pogoda/moscow
+      required: true
+      selector:
+        text:
+
+    force:
+      description: Use this option if iframe blocking is enabled on the site
+      default: false
+      selector:
+        boolean:

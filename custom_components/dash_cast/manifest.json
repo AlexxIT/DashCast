@@ -1,10 +1,12 @@
 {
   "domain": "dash_cast",
   "name": "DashCast",
+  "config_flow": true,
   "documentation": "https://github.com/AlexxIT/DashCast",
+  "issue_tracker": "https://github.com/AlexxIT/DashCast/issues",
+  "codeowners": ["@AlexxIT"],
+  "dependencies": ["cast"],
   "requirements": [],
-  "dependencies": [],
-  "codeowners": [
-    "@AlexxIT"
-  ]
+  "version": "1.0.0",
+  "iot_class": "calculated"
 }

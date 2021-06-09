@@ -8,7 +8,7 @@ from pychromecast.controllers.dashcast import DashCastController
 DOMAIN = 'dash_cast'
 
 
-def setup(hass, hass_config):
+async def async_setup(hass, hass_config):
     dashs = {}
 
     async def play_media(call: ServiceCall):
@@ -24,6 +24,10 @@ def setup(hass, hass_config):
                     entity._chromecast.register_handler(dash)
                 dash.load_url(url, force)
 
-    hass.services.register(DOMAIN, 'load_url', play_media)
+    hass.services.async_register(DOMAIN, 'load_url', play_media)
 
+    return True
+
+
+async def async_setup_entry(hass, entry):
     return True
