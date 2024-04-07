@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: "actions/checkout@v2"
       - uses: "hacs/action@main"
-        with: { category: "integration" }
+        with: { category: "integration", ignore: "brands" }
   hassfest:
     runs-on: "ubuntu-latest"
     steps:
