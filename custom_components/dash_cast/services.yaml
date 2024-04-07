@@ -15,3 +15,9 @@ load_url:
       default: false
       selector:
         boolean:
+    reload_seconds:
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 10000
