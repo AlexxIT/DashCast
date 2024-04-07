@@ -1,0 +1,22 @@
+{
+  "services": {
+    "load_url": {
+      "name": "DashCast",
+      "description": "Send websites to Chromecasts",
+      "fields": {
+        "entity_id": {
+          "name": "Entity",
+          "description": "Media player from Google Cast integration"
+        },
+        "url": {
+          "name": "URL",
+          "description": "Webpage URL"
+        },
+        "force": {
+          "name": "Force",
+          "description": "Use this option if iframe blocking is enabled on the site"
+        }
+      }
+    }
+  }
+}

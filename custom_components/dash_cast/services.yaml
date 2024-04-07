@@ -1,6 +1,4 @@
 load_url:
-  name: DashCast
-  description: Send websites to Chromecasts
   fields:
     entity_id:
       required: true
@@ -9,13 +7,11 @@ load_url:
           integration: cast
           domain: media_player
     url:
-      description: Webpage URL
       example: https://www.home-assistant.io/
       required: true
       selector:
         text:
     force:
-      description: Use this option if iframe blocking is enabled on the site
       default: false
       selector:
         boolean:
