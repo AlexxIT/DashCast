@@ -4,6 +4,8 @@
 
 This [Home Assistant](https://www.home-assistant.io/) service allows you to cast a website to a Google [Chromecast](https://en.wikipedia.org/wiki/Chromecast).
 
+**PS.** All thanks to [@stestagg](https://github.com/stestagg), developer of [DashCast](https://stestagg.github.io/dashcast/) app for Google Chromecast.
+
 ## Installation
 
 **Method 1.** [HACS](https://hacs.xyz/) custom repo:
@@ -31,13 +33,10 @@ dash_cast:
 New service `dash_cast.load_url`:
 
 ```yaml
-script:
-  show_weather:
-    alias: Show the weather
-    sequence:
-      - service: dash_cast.load_url
-        data:
-          entity_id: media_player.hall_tv
-          url: https://yandex.ru/pogoda/moscow
-          force: true  # use this option if iframe blocking is enabled on the site
+service: dash_cast.load_url
+data:
+  entity_id: media_player.hall_tv
+  url: https://www.home-assistant.io/
+  force: true  # use this option if iframe blocking is enabled on the site
+  reload_seconds: 60  # reload page every X seconds
 ```
